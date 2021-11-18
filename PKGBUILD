@@ -20,7 +20,7 @@ sha256sums=('SKIP'
 
 package() {
     # Install the systemd service
-    install -Dm644 minecraft-server-express.service /etc/systemd/system/
+    install -Dm644 minecraft-server-express.service ${pkgdir}/etc/systemd/system/
 
-    install -Dm644 server.jar /usr/share/minecraft
+    install -Dm644 server.jar ${pkgdir}/usr/share/minecraft
 }
