@@ -1,0 +1,11 @@
+[Unit]
+Description=Minecraft Server Express
+After=network.target
+
+[Service]
+User=minecraft
+WorkingDirectory=/usr/share/minecraft
+ExecStart=/usr/bin/java -Xmx2048M -Xms2048M -jar server.jar nogui
+
+[Install]
+WantedBy=multi-user.target
