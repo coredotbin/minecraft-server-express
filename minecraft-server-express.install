@@ -1,5 +1,0 @@
-# Post-installation tasks
-post_installation() {
-    # Create systemd service user
-    useradd minecraft
-}
