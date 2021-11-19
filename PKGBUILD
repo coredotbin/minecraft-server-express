@@ -26,7 +26,7 @@ package() {
     # Install the server jar
     mkdir -p ${pkgdir}/usr/share/minecraft-server-express
     install -m644 server.jar ${pkgdir}/usr/share/minecraft-server-express/
-    chown -R ${pkgdir}/usr/share/minecraft-server-express
+    chown -R minecraft:minecraft ${pkgdir}/usr/share/minecraft-server-express
 
     # Install sysusers hook
     mkdir -p {$pkgdir}/usr/lib/sysusers.d
