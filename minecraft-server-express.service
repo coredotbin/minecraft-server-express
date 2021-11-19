@@ -1,5 +1,5 @@
 [Unit]
-Description=Minecraft Server Express
+Description=Minecraft Server 1.17.1
 After=network.target
 
 [Service]
