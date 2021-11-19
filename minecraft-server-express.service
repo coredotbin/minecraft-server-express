@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=minecraft
-WorkingDirectory=/usr/share/minecraft
+WorkingDirectory=/usr/share/minecraft-server-express
 ExecStart=/usr/bin/java -Xmx2048M -Xms2048M -jar server.jar nogui
 
 [Install]
