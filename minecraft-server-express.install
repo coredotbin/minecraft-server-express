@@ -1,0 +1,4 @@
+post_install() {
+	useradd minecraft
+	chown -R minecraft:minecraft /usr/share/minecraft-server-express
+}
